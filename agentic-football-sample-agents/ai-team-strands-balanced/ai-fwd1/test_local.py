@@ -95,7 +95,7 @@ def test_llm():
         from strands import Agent
         from strands.models import BedrockModel
 
-        model = BedrockModel(model_id="us.amazon.nova-micro-v1:0")
+        model = BedrockModel(model_id="us.amazon.nova-lite-v1:0")
         agent = Agent(model=model, system_prompt=SYSTEM_PROMPT)
 
         summary = summarize_state(GAME_STATE, TEAM_ID, MY_PLAYER_ID, POSITION_LABEL)
